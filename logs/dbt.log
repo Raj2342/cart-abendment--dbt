@@ -1,0 +1,69 @@
+[0m01:39:12.597554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284C969BA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284CC095F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284CDFAFDD0>]}
+
+
+============================== 01:39:12.597554 | 1c72d583-af7f-4a7d-90ac-7432ab176cb2 ==============================
+[0m01:39:12.597554 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:39:12.597554 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\rajr5\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init ecommerce_abandonment', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m01:39:12.866809 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\rajr5\.dbt
+[0m01:39:12.866809 [debug] [MainThread]: Starter project path: C:\Users\rajr5\Music\work-main\work-main\target_placement\data analytics\dbt_cart_abendment\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m01:39:12.974474 [info ] [MainThread]: 
+Your new dbt project "ecommerce_abandonment" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:39:12.974474 [info ] [MainThread]: Setting up your profile.
+[0m01:46:35.904763 [info ] [MainThread]: Profile ecommerce_abandonment written to C:\Users\rajr5\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:46:35.932244 [debug] [MainThread]: Command `dbt init` succeeded at 01:46:35.904763 after 443.52 seconds
+[0m01:46:35.935476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284CCD07BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284CDF40390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284CDFCE990>]}
+[0m01:46:35.940488 [debug] [MainThread]: Flushing usage events
+[0m01:46:38.689483 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:15:04.429348 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 23:15:04.473898 | 73c6395d-8cc6-48b7-add7-f68028cacd37 ==============================
+[0m23:15:04.473898 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:15:04.473898 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rajr5\\.dbt', 'invocation_command': 'dbt run --select stg_ecommerce_cleaned', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:15:04.473898 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rajr5\Music\work-main\work-main\target_placement\data analytics\dbt_cart_abendment\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:15:04.473898 [debug] [MainThread]: Command `dbt run` failed at 23:15:04.473898 after 0.14 seconds
+[0m23:15:04.473898 [debug] [MainThread]: Flushing usage events
+[0m23:15:24.115920 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 23:15:24.145185 | 81e9a7c3-3212-4307-8195-4bba429a156f ==============================
+[0m23:15:24.145185 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:15:24.146151 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\rajr5\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_ecommerce_cleaned', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:15:24.146151 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rajr5\Music\work-main\work-main\target_placement\data analytics\dbt_cart_abendment\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:15:24.147847 [debug] [MainThread]: Command `dbt run` failed at 23:15:24.147847 after 0.08 seconds
+[0m23:15:24.148942 [debug] [MainThread]: Flushing usage events
+[0m04:22:47.966244 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 04:22:48.010738 | 81ac8cff-ee88-4605-a466-45a7728e7f0c ==============================
+[0m04:22:48.010738 [info ] [MainThread]: Running with dbt=1.11.7
+[0m04:22:48.011780 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rajr5\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m04:22:48.012784 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rajr5\Music\work-main\work-main\target_placement\data analytics\dbt_cart_abendment\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m04:22:48.013780 [debug] [MainThread]: Command `dbt run` failed at 04:22:48.013780 after 0.14 seconds
+[0m04:22:48.014780 [debug] [MainThread]: Flushing usage events

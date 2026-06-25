@@ -1,0 +1,19 @@
+folder : 
+cd ecommerce_abandonment
+
+active virtual enviroment : 
+1. ls ..
+2. ..\dbt-env\Scripts\Activate.ps1
+
+run code in terminal : 
+dbt run --select fct_session_features
+
+
+dbt run-operation train_cart_model
+
+model_features.sql
+int_session_aggregations.sql 
+fct_session_features.sql
+ecommerce_abandonment
+
+QueryUsagePerDay

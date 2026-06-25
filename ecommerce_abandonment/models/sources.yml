@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: ecommerce_raw
+    database: awsdatacatalog  # The AWS Librarian
+    schema: ecommerce_lakehouse_raw # Your actual Athena database
+    tables:
+      - name: active_clicks_unified
