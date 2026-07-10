@@ -38,7 +38,16 @@ To translate this business problem into actionable data logic, I engineered a be
 4. **Filtering the Noise (The "Window Shoppers"):** Identified behavioral anomalies, such as users with absurdly high cart values (e.g., $15,000) containing 40+ disparate items. These profiles are tagged as 'Stagnant' and systematically excluded from both discount triggers and paid ad retargeting campaigns, directly decreasing Customer Acquisition Cost (CAC) and improving overall return on ad spend.
 
 ---
+##ELT Architecture and Data flow
+### Google Bigqury :
 
+
+### AWS ATHENA 
+
+
+
+
+---
 ## 📁 Data Sourcing & Simulation
 
 To ensure strict adherence to data privacy standards and completely separate this independent case study from any professional work experience, the raw clickstream and event data powering this architecture is a synthetically scaled version of a public dataset: [eCommerce Behavior Data from Multi Category Store](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store).
