@@ -38,7 +38,7 @@ To translate this business problem into actionable data logic, I engineered a be
 4. **Filtering the Noise (The "Window Shoppers"):** Identified behavioral anomalies, such as users with absurdly high cart values (e.g., $15,000) containing 40+ disparate items. These profiles are tagged as 'Stagnant' and systematically excluded from both discount triggers and paid ad retargeting campaigns, directly decreasing Customer Acquisition Cost (CAC) and improving overall return on ad spend.
 
 ---
-##ELT Architecture and Data flow
+## ELT Architecture and Data flow
 ### Google Bigqury :
 
 
