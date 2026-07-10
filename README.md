@@ -1,5 +1,19 @@
-## 🎯 The Business Problem: Promotional Waste Audit: Cart Abandonment & Margin Optimization 
+# 🛒 Promotional Waste Audit: Cart Abandonment & Margin Optimization
 
+<p>
+  <img src="https://img.shields.io/badge/Google%20BigQuery-669DF6?style=flat&logo=google-cloud&logoColor=white" alt="BigQuery">
+  <img src="https://img.shields.io/badge/AWS%20Athena-232F3E?style=flat&logo=amazon-aws&logoColor=white" alt="AWS Athena">
+  <img src="https://img.shields.io/badge/dbt_Cloud-FF6B6B?style=flat&logo=dbt&logoColor=white" alt="dbt Cloud">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black" alt="Power BI">
+</p>
+
+*An independent enterprise-architecture case study demonstrating multi-cloud ELT workflows, behavioral intent classification, and data-driven margin optimization.*
+
+---
+
+## 🎯 The Business Problem: The $7 Million Bleed
 
 Imagine a high-growth e-commerce startup generating $10 million in annual revenue. A top-level analytics audit reveals a critical bottleneck: a **70% cart abandonment rate**. Users are essentially leaving $7 million worth of products in their digital carts and walking away.
 
@@ -22,3 +36,11 @@ To translate this business problem into actionable data logic, I engineered a be
 2. **Plugging the Margin Bleed (The "Safe Buyers"):** Analyzed session velocity and category focus. Users who navigated directly to specific categories and added to their cart rapidly demonstrated high purchase intent. The engine tags these users to **block discount triggers**, ensuring they convert at full price and immediately saving profit margins.
 3. **Surgical Rescue Targeting (The "Hesitant Buyers"):** Engineered a 'Browse-to-Cart Ratio' metric. Users who viewed 15+ items over an extended session before adding to the cart were flagged as price-shopping or hesitant. The system signals the marketing engine to trigger the 10% recovery pop-up *only* for this highly receptive segment.
 4. **Filtering the Noise (The "Window Shoppers"):** Identified behavioral anomalies, such as users with absurdly high cart values (e.g., $15,000) containing 40+ disparate items. These profiles are tagged as 'Stagnant' and systematically excluded from both discount triggers and paid ad retargeting campaigns, directly decreasing Customer Acquisition Cost (CAC) and improving overall return on ad spend.
+
+---
+
+## 📁 Data Sourcing & Simulation
+
+To ensure strict adherence to data privacy standards and completely separate this independent case study from any professional work experience, the raw clickstream and event data powering this architecture is a synthetically scaled version of a public dataset: [eCommerce Behavior Data from Multi Category Store](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store).
+
+The raw data was structurally modified, aggregated across multiple event types (views, carts, purchases), and scaled to simulate a massive enterprise multi-cloud environment. This allowed me to rigorously stress-test the AWS + BigQuery + dbt ELT pipeline and demonstrate production-grade analytical capabilities without utilizing proprietary company data.
