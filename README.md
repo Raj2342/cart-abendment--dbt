@@ -153,6 +153,7 @@ https://app.powerbi.com/view?r=eyJrIjoiOWE2ODY3Y2ItNGM1Yi00ZDhhLTk4ZGUtNDQ3YTI0Z
 
 <img width="1072" height="732" alt="3" src="https://github.com/user-attachments/assets/67c6c887-da07-4491-81c4-ba8e4a990510" />
 
+<img width="1078" height="740" alt="4" src="https://github.com/user-attachments/assets/675d2de1-130c-4624-ae04-941267a46a72" />
 
 ---
 ## 📁 Data Sourcing & Simulation
