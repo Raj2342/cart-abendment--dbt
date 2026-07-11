@@ -42,7 +42,7 @@ To translate this business problem into actionable data logic, I engineered a be
 ### Google Bigqury :
 <img width="1529" height="991" alt="cart_google" src="https://github.com/user-attachments/assets/6d32ba78-9897-428d-b6b8-dd6628fbb55d" />
 
-
+---
 ### AWS ATHENA 
 <img width="1141" height="621" alt="cart_security drawio" src="https://github.com/user-attachments/assets/f8d7d80c-8e35-4312-adc6-44d328fd5535" />
 
