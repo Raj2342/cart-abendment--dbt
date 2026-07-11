@@ -51,6 +51,26 @@ To translate this business problem into actionable data logic, I engineered a be
 
 ---
 
+## 📊 Raw Data Sourcing & Scale
+
+This project is built to handle massive, production-grade data volumes. The raw dataset consists of seven months of logged activity (October 2019 to April 2020), originally stored as highly compressed `.csv.gz` files. 
+
+To demonstrate scalability and cloud-compute efficiency, the pipeline processes **over 411 Million rows** of raw data.
+
+### Data Volume Breakdown
+
+| Period | File Name | Compressed Size | Total Rows |
+| :--- | :--- | :--- | :--- |
+| **Oct 2019** | `2019-Oct.csv.gz` | 42,448,764 |
+| **Nov 2019** | `2019-Nov.csv.gz` | 67,501,979 |
+| **Dec 2019** | `2019-Dec.csv.gz` | 67,542,878 |
+| **Jan 2020** | `2020-Jan.csv.gz` | 55,967,041 |
+| **Feb 2020** | `2020-Feb.csv.gz` | 55,318,565 |
+| **Mar 2020** | `2020-Mar.csv.gz` | 56,341,241 |
+| **Apr 2020** | `2020-Apr.csv.gz` | 66,589,268 |
+| **Total Scale** | **7 Months**  | **411,709,736 Rows** |
+
+<img width="1908" height="830" alt="image" src="https://github.com/user-attachments/assets/ad24267c-08ae-42eb-8ea9-a68275b6c144" />
 
 
 
