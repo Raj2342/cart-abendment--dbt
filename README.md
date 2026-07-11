@@ -74,7 +74,8 @@ To demonstrate scalability and cloud-compute efficiency, the pipeline processes 
 
 --
 ## dbt Data Lineage & Transformation DAG
-<img width="891" height="951" alt="dbt_lineanage drawio" src="https://github.com/user-attachments/assets/33453fb1-9ed6-45cc-ab11-b17876c3fbf8" />
+<img width="891" height="951" alt="dbt_lineage drawio" src="https://github.com/user-attachments/assets/f5a31509-c403-4dc7-acfd-9194ca539909" />
+
 
 
 
