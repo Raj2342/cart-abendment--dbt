@@ -156,6 +156,9 @@ https://app.powerbi.com/view?r=eyJrIjoiOWE2ODY3Y2ItNGM1Yi00ZDhhLTk4ZGUtNDQ3YTI0Z
 <img width="1078" height="740" alt="4" src="https://github.com/user-attachments/assets/675d2de1-130c-4624-ae04-941267a46a72" />
 
 ---
+## 💸 Business Impact: Translating Data into Revenue
+
+
 ## 📁 Data Sourcing & Simulation
 
 To ensure strict adherence to data privacy standards and completely separate this independent case study from any professional work experience, the raw clickstream and event data powering this architecture is a synthetically scaled version of a public dataset: [eCommerce Behavior Data from Multi Category Store](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store).
