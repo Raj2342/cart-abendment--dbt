@@ -76,8 +76,76 @@ To demonstrate scalability and cloud-compute efficiency, the pipeline processes 
 ## dbt Data Lineage & Transformation DAG
 <img width="891" height="951" alt="dbt_lineage drawio" src="https://github.com/user-attachments/assets/f5a31509-c403-4dc7-acfd-9194ca539909" />
 
+--
+## 🗂️ Repository Structure & SQL Models
 
+This project utilizes **dbt (data build tool)** to execute modular SQL transformations directly within the cloud compute engine. The modeling architecture follows industry-standard data warehousing principles, separating raw data ingestion from business logic and feature engineering.
 
+Below is the core structure of the dbt `models/` directory:
+
+```text
+ecommerce_abandonment/
+├── dbt_project.yml                 # Core dbt configuration and materialization settings
+└── models/
+    ├── sources.yml                 # Maps the cloud data catalog (schema) to dbt
+    ├── stg_ecommerce_unified.sql   # Base staging model targeting the 411M+ raw rows
+    │
+    ├── cleaning/
+    │   └── stg_ecommerce_cleaned.sql # Handles type casting, null imputation, and deduplication
+    │
+    ├── Feature Engineering/
+    │   └── fct_session_features.sql  # Aggregates granular clicks into session-level metrics
+    │
+    └── model_features.sql          # Final wide denormalized table built for BI/ML ingestion
+```
+---
+### 🧠 Core Engineering Logic: Behavioral Triage Engine (Demo Snippet)
+
+📌 *Note: The snippet below is a demonstration highlighting the core logic. The complete dbt models within this repository heavily utilize advanced SQL techniques including complex `CTEs`, conditional `AGGREGATIONS`, dynamic `CASE` statements, and analytical `WINDOW` functions to execute heavy data transformations directly within AWS Athena.*
+
+The true value of this Session Analysis lies in moving beyond simple binary flags (purchased vs. abandoned). Below is the logic snippet that dynamically classifies users based on their session timeline (Time-to-Cart) and exploration behavior, ultimately calculating the exact recoverable revenue and financial bleed for the business.
+
+```sql
+-- Snippet from: models/Feature Engineering/fct_session_features.sql
+
+WITH triage_classification AS (
+    -- Dynamically segments users based on checkout velocity and browsing friction
+    SELECT
+        *,
+        CASE 
+            WHEN has_purchase = 1 THEN 
+                CASE 
+                    WHEN time_to_cart_sec < 180 AND unique_categories_viewed <= 1 AND views_after_last_cart <= 1 
+                    THEN 'Safe Buyer'
+                    ELSE 'Hesitate Buyer (Purchased)'
+                END
+
+            WHEN has_purchase = 0 THEN
+                CASE 
+                    WHEN time_to_cart_sec < 300 AND unique_categories_viewed <= 3 AND total_views_up_to_last_cart <= 6 
+                    THEN 'Hesitate Buyer (Abandoned)'
+                    ELSE 'Window Shopper'
+                END
+        END AS status
+    FROM session_agg
+    WHERE has_cart = 1
+)
+
+SELECT 
+    user_id,
+    user_session,
+    status,
+    -- Translates behavioral segments into actionable financial metrics
+    CASE WHEN status = 'Safe Buyer' THEN total_purchased_value * 0.10 ELSE 0.00 END AS protected_margin,
+    CASE WHEN status = 'Hesitate Buyer (Abandoned)' THEN net_cart_value ELSE 0.00 END AS recoverable_revenue,
+    CASE WHEN has_purchase = 0 THEN net_cart_value ELSE 0.00 END AS revenue_bleed,
+    CASE WHEN status = 'Hesitate Buyer (Purchased)' THEN total_purchased_value ELSE 0.00 END AS friction_revenue
+FROM triage_classification;
+
+```
+---
+## 📈 Final Deliverable: Business Intelligence & Actionable Insights
+https://app.powerbi.com/view?r=eyJrIjoiOWE2ODY3Y2ItNGM1Yi00ZDhhLTk4ZGUtNDQ3YTI0ZTc2ZTYyIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9 
 
 ---
 ## 📁 Data Sourcing & Simulation
