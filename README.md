@@ -146,6 +146,13 @@ FROM triage_classification;
 ---
 ## 📈 Final Deliverable: Business Intelligence & Actionable Insights
 https://app.powerbi.com/view?r=eyJrIjoiOWE2ODY3Y2ItNGM1Yi00ZDhhLTk4ZGUtNDQ3YTI0ZTc2ZTYyIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9 
+---
+<img width="1218" height="733" alt="1" src="https://github.com/user-attachments/assets/855cef8e-13b0-43a8-b106-d5c7770291a3" />
+
+<img width="786" height="732" alt="2" src="https://github.com/user-attachments/assets/246ffe7d-34d5-477d-a776-2157dcd30a61" />
+
+<img width="1072" height="732" alt="3" src="https://github.com/user-attachments/assets/67c6c887-da07-4491-81c4-ba8e4a990510" />
+
 
 ---
 ## 📁 Data Sourcing & Simulation
