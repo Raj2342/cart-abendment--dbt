@@ -13,9 +13,9 @@
 
 ---
 
-## 🎯 The Business Problem: The $7 Million Bleed   
+## 🎯 The Business Problem: Revenue  Bleed   
 
-Imagine a high-growth e-commerce startup generating $10 million in annual revenue. A top-level analytics audit reveals a critical bottleneck: a **70% cart abandonment rate**. Users are essentially leaving $7 million worth of products in their digital carts and walking away.
+Imagine a high-growth e-commerce startup generating  million  dollar in annual revenue. A top-level analytics audit reveals a critical bottleneck: a **Massive  cart abandonment rate**. Users are essentially leaving high revenue  worth of products in their digital carts and walking away.
 
 However, the high abandonment rate was only a symptom. The root cause of the financial drain was the company's **"dumb discount system."** In a desperate attempt to recover abandoned carts, the platform was automatically triggering a 10% discount pop-up and sending 24-hour reminder emails to *every single user*. 
 
