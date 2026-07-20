@@ -160,7 +160,7 @@ https://app.powerbi.com/view?r=eyJrIjoiOWE2ODY3Y2ItNGM1Yi00ZDhhLTk4ZGUtNDQ3YTI0Z
 
 ---
 ## 💸 Business Impact: Translating Data into Revenue
-
+ open final_report folder 
 
 ## 📁 Data Sourcing & Simulation
 
